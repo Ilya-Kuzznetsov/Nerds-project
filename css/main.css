@@ -1,9 +1,13 @@
+
 li{
     list-style: none;
 }
 a{
     text-decoration: none;
     text-transform: uppercase;
+}
+header{
+    background-color: #eeeeee;
 }
 .container{ 
     display: block;
@@ -13,6 +17,8 @@ a{
     outline: 1px solid red;
 }
 .main-navigation ul{
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0;
 }
 .flex-container{
@@ -41,4 +47,27 @@ a{
 }
 .main-navigation ul li:nth-child(6){
     flex-basis: 115px;
+}
+.services{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.services img{
+    margin-bottom: 30px;
+}
+.services h2{
+    margin-bottom: 30px;
+}
+.services p{
+    display: block;
+    width: 238px;
+    height: 41px;
+}
+.services-button{
+    display: block;
+    width: 160px;
+    height: 50px;
+    outline: 1px solid blue;
+    padding: 0;
+    margin: 0;
 }
