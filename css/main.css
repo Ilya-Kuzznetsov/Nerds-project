@@ -14,7 +14,7 @@ header{
     margin: 0 auto; 
     width: 1200px; 
     padding: 0 20px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 .main-navigation ul{
     justify-content: space-between;
@@ -23,7 +23,7 @@ header{
 }
 .flex-container{
     display: flex;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 .main-navigation ul li:nth-child(1){
     margin-right: 200px;
@@ -81,10 +81,22 @@ header{
     background-color: #fb565a;
     text-align: center;
 }
-.services-button .item{
+.item .services-button{
+    color: white;
+}
+.services-button .text{
     vertical-align: middle;
     line-height: 50px;
     margin: 40px;
+}
+.services-button:hover{
+    background-color: #e74246;
+}
+.item .services-button:active{
+    background-color: #d7373b;
+}
+.item .services-button:active> .text{
+    opacity: 0.3;
 }
 .services .item:nth-child(2) .services-button{
     width: 160px;
@@ -96,6 +108,12 @@ header{
     background-color: #00ca74;
     text-align: center;
 }
+.services .item:nth-child(2) .services-button:hover{
+    background-color: #00bc6c;
+}
+.services .item:nth-child(2) .services-button:active{
+    background-color: #00aa62;
+}
 .services .item:nth-child(3) .services-button{
     width: 160px;
     height: 50px;
@@ -105,6 +123,12 @@ header{
     border-radius: 4px;
     background-color: #efc84a;
     text-align: center;
+}
+.services .item:nth-child(3) .services-button:hover{
+    background-color: #eab534;
+}
+.services .item:nth-child(3) .services-button:active{
+    background-color: #e5a722;
 }
 .line{
     display: block;
