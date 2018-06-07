@@ -49,14 +49,21 @@ header{
     flex-basis: 115px;
 }
 .services{
-    justify-content: space-between;
     flex-wrap: wrap;
 }
-.services img{
-    margin-bottom: 30px;
+.services .item:nth-child(1),
+.services .item:nth-child(2){
+    margin-right: 100px;
 }
-.services h2{
-    margin-bottom: 30px;
+.services .item h2{
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.services .item p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 36px;
 }
 .services p{
     display: block;
@@ -64,10 +71,49 @@ header{
     height: 41px;
 }
 .services-button{
-    display: block;
     width: 160px;
     height: 50px;
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
     padding: 0;
     margin: 0;
+    border-radius: 4px;
+    background-color: #fb565a;
+    text-align: center;
+}
+.services-button .item{
+    vertical-align: middle;
+    line-height: 50px;
+    margin: 40px;
+}
+.services .item:nth-child(2) .services-button{
+    width: 160px;
+    height: 50px;
+    /* outline: 1px solid blue; */
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    background-color: #00ca74;
+    text-align: center;
+}
+.services .item:nth-child(3) .services-button{
+    width: 160px;
+    height: 50px;
+    /* outline: 1px solid blue; */
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    background-color: #efc84a;
+    text-align: center;
+}
+.who-we-are .item{
+    width: 660px;
+}
+.who-we-are .item h2,
+.who-we-are .item p,
+.who-we-are .item ul{
+    display: block;
+}
+.who-we-are .item h2{
+    font-size: 45px;
+    line-height: 45px;
 }
