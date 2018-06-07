@@ -50,6 +50,7 @@ header{
 }
 .services{
     flex-wrap: wrap;
+    margin-bottom: 80px;
 }
 .services .item:nth-child(1),
 .services .item:nth-child(2){
@@ -105,8 +106,23 @@ header{
     background-color: #efc84a;
     text-align: center;
 }
+.line{
+    display: block;
+    height: 2px;
+    background-color: #eeeeee;
+    margin-bottom: 40px;
+}
+.who-we-are{
+    justify-content: space-between;
+}
 .who-we-are .item{
     width: 660px;
+}
+.who-we-are .item:nth-child(1){
+    flex-basis: 650px;
+}
+.who-we-are .item:nth-child(2){
+    flex-basis: 400px;
 }
 .who-we-are .item h2,
 .who-we-are .item p,
@@ -132,3 +148,14 @@ header{
     height: 2px;
     background-color: #fb565a;
 }
+/* .who-we-are .item:nth-child(1):nth-child(2){
+    margin-top: -8px;
+} */
+/* .who-we-are .item:nth-child(1) p:nth-child(2){
+    margin-top: 44px;
+    text-transform: uppercase;
+} */
+.who-we-are .item:nth-child(1) ul{
+    margin-top: 24px;
+}
+
