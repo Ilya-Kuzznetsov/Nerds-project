@@ -1,4 +1,14 @@
-
+@font-face{
+    font-family: "Roboto";
+    src: local("Roboto-Regular"),
+    local("Roboto Regular"),
+    url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
+    font-weight: 400;
+}
+body{
+    font-family: "Roboto", sans-serif
+}
 li{
     list-style: none;
 }
@@ -8,6 +18,8 @@ a{
 }
 header{
     background-color: #eeeeee;
+    padding-top: 49px;
+    margin: 0;
 }
 .container{ 
     display: block;
@@ -16,37 +28,104 @@ header{
     padding: 0 20px;
     /* outline: 1px solid red; */
 }
+.slider{
+    margin-top: 0;
+    height: 430px;
+    background-color: #eeeeee;
+}
 .main-navigation ul{
-    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     padding: 0;
+    margin: 0;
 }
 .flex-container{
     display: flex;
     /* outline: 1px solid red; */
 }
 .main-navigation ul li:nth-child(1){
-    margin-right: 200px;
+    margin-right: 202px;
     flex-basis: 160px;
 }
 .main-navigation ul li:nth-child(2){
-    margin-right: 45px;
+    margin-right: 47px;
+    margin-top: 13px;
     flex-basis: 61px;
 }
 .main-navigation ul li:nth-child(3){
     margin-right: 47px;
+    margin-top: 13px;
     flex-basis: 76px;
 }
 .main-navigation ul li:nth-child(4){
-    margin-right: 45px;
+    margin-right: 44px;
+    margin-top: 13px;
     flex-basis: 75px;
 }
 .main-navigation ul li:nth-child(5){
-    margin-right: 245px;
+    margin-right: 285px;
+    margin-top: 13px;
     flex-basis: 86px;
 }
 .main-navigation ul li:nth-child(6){
     flex-basis: 115px;
+    margin-top: 13px;
+}
+
+
+
+
+/* ------------------------------ СЛАЙДЕР ------------------------------ */
+.slider-list .item{
+    background-image: url(../img/slide-1.png);
+    background-repeat: no-repeat;
+    background-position: 397px -4px;
+    height: 430px;
+}
+.slider-list .item h2{
+    width: 389px;
+    font-size: 55px;
+    line-height: 55px;
+    margin: 0;
+    position: relative;
+    top: 79px;
+    left: -3px;
+    font-weight: 800;
+    letter-spacing: 0.5px
+}
+.slider-list .item p{
+    width: 360px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    position: relative;
+    top: 100px;
+}
+.slider-list .item:nth-child(1) .slider-button{
+    display: block;
+    position: relative;
+    top: 139px;
+    width: 240px;
+    height: 50px;
+    background-color: #fb565a;
+    border-radius: 3px;
+}
+.slider-list .item:nth-child(1) .slider-button .text{
+    display: block;
+    position: relative;
+    left: 54px;
+    top: 18px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
+
+
+/* ------------------------------ услуги ------------------------------ */
+.what-we-do{
+    margin-top: 76px;
 }
 .services{
     flex-wrap: wrap;
@@ -57,18 +136,21 @@ header{
     margin-right: 100px;
 }
 .services .item h2{
+    margin-left: -2px;
+    margin-top: 22px;
     font-size: 24px;
     line-height: 30px;
     text-transform: uppercase;
 }
 .services .item p{
+    margin-top: -5px;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 36px;
+    margin-bottom: 38px;
 }
 .services p{
     display: block;
-    width: 238px;
+    width: 246px;
     height: 41px;
 }
 .services-button{
@@ -85,9 +167,10 @@ header{
     color: white;
 }
 .services-button .text{
-    vertical-align: middle;
     line-height: 50px;
-    margin: 40px;
+    display: block;
+    position: relative;
+    top: 2px;
 }
 .services-button:hover{
     background-color: #e74246;
@@ -143,7 +226,8 @@ header{
     width: 660px;
 }
 .who-we-are .item:nth-child(1){
-    flex-basis: 650px;
+    flex-basis: 665px;
+    margin-top: 1px;
 }
 .who-we-are .item:nth-child(2){
     flex-basis: 400px;
@@ -157,16 +241,29 @@ header{
     font-size: 45px;
     line-height: 45px;
 }
-.who-we-are .item p,
-.who-we-are .item ul{
+.item:nth-child(1) .p1{
     font-size: 16px;
     line-height: 24px;
+    margin-top: -8px;
+}
+.item:nth-child(1) .p2{
+    margin-top: 42px;
+    text-transform: uppercase;
+}
+.item:nth-child(2) .p1{
+    margin-top: 35px;
+    text-transform: uppercase;
+    margin-left: 16px;
+}
+.who-we-are .item ul{
+    font-size: 16px;
+    line-height: 46px;
 }
 .who-we-are .item ul li::before{
     display: block;
     position: relative;
-    top: 12px;
-    left: -39px;
+    top: 23px;
+    left: -35px;
     content: "";
     width: 25px;
     height: 2px;
@@ -180,9 +277,22 @@ header{
     text-transform: uppercase;
 } */
 .who-we-are .item:nth-child(1) ul{
-    margin-top: 24px;
+    margin-top: -2px;
+    margin-left: -4px;
 }
-<<<<<<< HEAD
+th{
+    font-size: 45px;
+}
+.th1{
+    display: block;
+    position: relative;
+}
+.th2{
+    display: block;
+    position: relative;
+    top: -53px;
+    left: 119px;
+}
 .th3{
     display: block;
     position: relative;
@@ -205,17 +315,5 @@ header{
 }
 .item .table{
     margin-top: 41px;
-<<<<<<< HEAD
-    margin-left: -13px;
-}
-.who-we-are .line{
-    position: relative;
-    top: 45px;
-}
-=======
     margin-left: -9px;
 }
->>>>>>> parent of 1a4f0aa... какая-то херня вышла
-=======
-
->>>>>>> parent of 117a07d... До партнеров готово
