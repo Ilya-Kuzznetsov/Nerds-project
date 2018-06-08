@@ -85,7 +85,6 @@ header{
     top: 139px;
     width: 240px;
     height: 50px;
-    margin: 0;
     background-color: #fb565a;
     border-radius: 3px;
 }
@@ -94,7 +93,6 @@ header{
     position: relative;
     left: 54px;
     top: 18px;
-    width: 134px;
     text-transform: uppercase;
     font-size: 16px;
     line-height: 18px;
@@ -103,7 +101,7 @@ header{
 
 
 
-/* ------------------------------ УСЛУГИ ------------------------------ */
+/* ------------------------------ услуги ------------------------------ */
 .what-we-do{
     margin-top: 76px;
 }
@@ -192,13 +190,8 @@ header{
 .line{
     display: block;
     height: 2px;
-    margin-bottom: 40px;
-}
-.line .item{
-    display: block;
-    height: 2px;
-    margin-right: 40px;
     background-color: #eeeeee;
+    margin-bottom: 40px;
 }
 .who-we-are{
     justify-content: space-between;
@@ -236,6 +229,13 @@ header{
     height: 2px;
     background-color: #fb565a;
 }
+/* .who-we-are .item:nth-child(1):nth-child(2){
+    margin-top: -8px;
+} */
+/* .who-we-are .item:nth-child(1) p:nth-child(2){
+    margin-top: 44px;
+    text-transform: uppercase;
+} */
 .who-we-are .item:nth-child(1) ul{
     margin-top: 24px;
 }
@@ -252,7 +252,7 @@ header{
 .td4{
     display: block;
     position: relative;
-    left: 11px;
+    left: 6px;
 }
 .td6{
     display: block;
@@ -261,9 +261,14 @@ header{
 }
 .item .table{
     margin-top: 41px;
+<<<<<<< HEAD
     margin-left: -13px;
 }
 .who-we-are .line{
     position: relative;
     top: 45px;
 }
+=======
+    margin-left: -9px;
+}
+>>>>>>> parent of 1a4f0aa... какая-то херня вышла
