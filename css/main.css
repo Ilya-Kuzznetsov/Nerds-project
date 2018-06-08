@@ -1,14 +1,4 @@
-@font-face{
-    font-family: "Roboto";
-    src: local("Roboto-Regular"),
-    local("Roboto Regular"),
-    url("../fonts/roboto.woff2") format("woff2"),
-    url("../fonts/roboto.woff") format("woff");
-    font-weight: 400;
-}
-body{
-    font-family: "Roboto", sans-serif
-}
+
 li{
     list-style: none;
 }
@@ -18,8 +8,6 @@ a{
 }
 header{
     background-color: #eeeeee;
-    padding-top: 49px;
-    margin: 0;
 }
 .container{ 
     display: block;
@@ -28,43 +16,33 @@ header{
     padding: 0 20px;
     /* outline: 1px solid red; */
 }
-.slider{
-    margin-top: 0;
-    height: 430px;
-    background-color: #eeeeee;
-}
 .main-navigation ul{
-    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0;
 }
 .flex-container{
     display: flex;
     /* outline: 1px solid red; */
 }
 .main-navigation ul li:nth-child(1){
-    margin-right: 202px;
+    margin-right: 200px;
     flex-basis: 160px;
 }
 .main-navigation ul li:nth-child(2){
-    margin-right: 47px;
-    margin-top: 13px;
+    margin-right: 45px;
     flex-basis: 61px;
 }
 .main-navigation ul li:nth-child(3){
     margin-right: 47px;
-    margin-top: 13px;
     flex-basis: 76px;
 }
 .main-navigation ul li:nth-child(4){
-    margin-right: 44px;
-    margin-top: 13px;
+    margin-right: 45px;
     flex-basis: 75px;
 }
 .main-navigation ul li:nth-child(5){
-    margin-right: 285px;
-    margin-top: 13px;
+    margin-right: 245px;
     flex-basis: 86px;
 }
 .main-navigation ul li:nth-child(6){
@@ -138,21 +116,18 @@ header{
     margin-right: 100px;
 }
 .services .item h2{
-    margin-left: -2px;
-    margin-top: 22px;
     font-size: 24px;
     line-height: 30px;
     text-transform: uppercase;
 }
 .services .item p{
-    margin-top: -5px;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 38px;
+    margin-bottom: 36px;
 }
 .services p{
     display: block;
-    width: 246px;
+    width: 238px;
     height: 41px;
 }
 .services-button{
@@ -169,10 +144,9 @@ header{
     color: white;
 }
 .services-button .text{
+    vertical-align: middle;
     line-height: 50px;
-    display: block;
-    position: relative;
-    top: 2px;
+    margin: 40px;
 }
 .services-button:hover{
     background-color: #e74246;
@@ -233,8 +207,7 @@ header{
     width: 660px;
 }
 .who-we-are .item:nth-child(1){
-    flex-basis: 665px;
-    margin-top: 1px;
+    flex-basis: 650px;
 }
 .who-we-are .item:nth-child(2){
     flex-basis: 400px;
@@ -248,50 +221,23 @@ header{
     font-size: 45px;
     line-height: 45px;
 }
-.item:nth-child(1) .p1{
-    font-size: 16px;
-    line-height: 24px;
-    margin-top: -8px;
-}
-.item:nth-child(1) .p2{
-    margin-top: 42px;
-    text-transform: uppercase;
-}
-.item:nth-child(2) .p1{
-    margin-top: 35px;
-    text-transform: uppercase;
-    margin-left: 16px;
-}
+.who-we-are .item p,
 .who-we-are .item ul{
     font-size: 16px;
-    line-height: 46px;
+    line-height: 24px;
 }
 .who-we-are .item ul li::before{
     display: block;
     position: relative;
-    top: 23px;
-    left: -35px;
+    top: 12px;
+    left: -39px;
     content: "";
     width: 25px;
     height: 2px;
     background-color: #fb565a;
 }
 .who-we-are .item:nth-child(1) ul{
-    margin-top: -2px;
-    margin-left: -4px;
-}
-th{
-    font-size: 45px;
-}
-.th1{
-    display: block;
-    position: relative;
-}
-.th2{
-    display: block;
-    position: relative;
-    top: -53px;
-    left: 119px;
+    margin-top: 24px;
 }
 .th3{
     display: block;
