@@ -107,6 +107,7 @@ header{
     top: 139px;
     width: 240px;
     height: 50px;
+    margin: 0;
     background-color: #fb565a;
     border-radius: 3px;
 }
@@ -115,6 +116,7 @@ header{
     position: relative;
     left: 54px;
     top: 18px;
+    width: 134px;
     text-transform: uppercase;
     font-size: 16px;
     line-height: 18px;
@@ -123,7 +125,7 @@ header{
 
 
 
-/* ------------------------------ услуги ------------------------------ */
+/* ------------------------------ УСЛУГИ ------------------------------ */
 .what-we-do{
     margin-top: 76px;
 }
@@ -216,8 +218,13 @@ header{
 .line{
     display: block;
     height: 2px;
-    background-color: #eeeeee;
     margin-bottom: 40px;
+}
+.line .item{
+    display: block;
+    height: 2px;
+    margin-right: 40px;
+    background-color: #eeeeee;
 }
 .who-we-are{
     justify-content: space-between;
@@ -269,13 +276,6 @@ header{
     height: 2px;
     background-color: #fb565a;
 }
-/* .who-we-are .item:nth-child(1):nth-child(2){
-    margin-top: -8px;
-} */
-/* .who-we-are .item:nth-child(1) p:nth-child(2){
-    margin-top: 44px;
-    text-transform: uppercase;
-} */
 .who-we-are .item:nth-child(1) ul{
     margin-top: -2px;
     margin-left: -4px;
@@ -306,7 +306,7 @@ th{
 .td4{
     display: block;
     position: relative;
-    left: 6px;
+    left: 11px;
 }
 .td6{
     display: block;
@@ -315,5 +315,9 @@ th{
 }
 .item .table{
     margin-top: 41px;
-    margin-left: -9px;
+    margin-left: -13px;
+}
+.who-we-are .line{
+    position: relative;
+    top: 45px;
 }
