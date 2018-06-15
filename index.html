@@ -2,11 +2,12 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>HTML Academy: Нёрдс</title>
         <link rel="stylesheet" href="css/normolize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
-    <body>
+    <body class="container-main">
         <header>
             <nav class="main-navigation container">
                 <ul class="flex-container">
@@ -42,14 +43,34 @@
                     </li>
                 </ul>
             </nav>
+            <a class="menu-logo" href="#">
+                    <img src="img/logo.png" alt="Логотип Нёрдс">
+                </a>
+            <div class="wrapper">
+                <input type="checkbox" id="check-menu">
+                <label for="check-menu">MENU</label>
+                <div class="burger-line first"></div>
+                <div class="burger-line second"></div>
+                <div class="burger-line third"></div>
+                <div class="burger-line fourth"></div>
+                <nav class="main-menu">
+                    <a href="#">Студия</a>
+                    <a href="#">Клиенты</a>
+                    <a href="#">Магазин</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Корзина</a>
+                </nav>
+            </div>
         </header>
         <main>
             <section class="slider">
                 <div class="slider-list container">
                     <div class="item">
-                        <h2>Долго, дорого, скрупулезно.</h2>
-                        <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-                        <a href="#"><div class="slider-button"><span class="text">Узнать больше</span></div></a>
+                        <div class="content">
+                            <h2>Долго, дорого,<br>скрупулезно.</h2>
+                            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                            <a href="#">Узнать больше</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -110,30 +131,32 @@
                 <div class="item"></div>
             </div>
             <section class="partners container flex-container">
-                <div class="img-1"><img src="img/partner-1.png" alt="Лого htmlacademy"></div>
-                <div class="img-2"><img src="img/partner-2.png" alt="Лого barbershop borodinski"></div>
-                <div class="img-3"><img src="img/partner-3.png" alt="Лого pink"></div>
-                <div class="img-4"><img src="img/partner-4.png" alt="Лого mishka"></div>
+                <div class="item"><img src="img/partner-1.png" alt="Лого htmlacademy"></div>
+                <div class="item"><img src="img/partner-2.png" alt="Лого barbershop borodinski"></div>
+                <div class="item"><img src="img/partner-3.png" alt="Лого pink"></div>
+                <div class="item"><img src="img/partner-4.png" alt="Лого mishka"></div>
             </section>
             <div class="line3 container">
                 <div class="item"></div>
             </div>
-            <section class="contacts container">
-                <div class="contacts-block">
+            <section class="contacts">
+                <div class="contacts-block container">
+                    <div class="content">
                     <p><b>NЁRDS DESIGN STUDIO</b></p>
-                    <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                    <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
                     <p>тел. +7 (812) 275-75-75</p>
-                    <a href="#" class="contact-us">Напишите нам</a>
+                    <a href="#" class="contact-us"><span class="text">Напишите нам</span></a>
+                    </div>
                 </div>
             </section>
         </main>
         <footer>
-            <section class="social container">
-                <a href="#"><img src="img/social-1.png" alt="Лого VK"></a>
-                <a href="#"><img src="img/social-2.png" alt="Лого Facebook"></a>
-                <a href="#"><img src="img/social-3.png" alt="Лого Instagram"></a>
+            <section class="social container flex-container">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
             </section>
-            <section class="frinds container">
+            <section class="friends container">
                 <h2>Давайте дружить, это выгодно!</h2>
                 <p>Скидка 10% для друзей из социальных сетей.</p>
             </section>
